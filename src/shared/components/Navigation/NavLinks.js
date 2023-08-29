@@ -7,16 +7,16 @@ const NavLinks = (props) => {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/">ALL USERS</NavLink>
+        <NavLink to="/" exact>ALL USERS</NavLink>
       </li>
       <li>
-        <NavLink to="/u1/places">MY PLACES</NavLink>
+        <NavLink to="/u1/places" exact>MY PLACES</NavLink>
       </li>
       <li>
-        <NavLink to="/places/new">ADD PLACES</NavLink>
+        <NavLink to="/places/new" exact>ADD PLACES</NavLink>
       </li>
       <li>
-        <NavLink to="/">AUTHENTICATE</NavLink>
+        <NavLink to="/" exact>AUTHENTICATE</NavLink>
       </li>
     </ul>
   );
