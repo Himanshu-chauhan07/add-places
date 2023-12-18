@@ -19,7 +19,7 @@ const DUMMY_PLACES =[
         creator: 'u1'
         },
         {
-        id: 'p1',
+        id: 'p2',
         title: 'Empire State Building',
         description: 'one of the most famous sky scapers in the world',
         imageUrl : 'https://cdn.pixabay.com/photo/2020/10/23/06/23/city-5677823_1280.jpg',
@@ -35,7 +35,6 @@ const DUMMY_PLACES =[
 
 const UserPlaces = () =>{
     const userId = useParams().userId;
-    console.log(userId);
     const loadedPlaces = DUMMY_PLACES.filter(place => place.creator === userId);
 
     return <PlaceList items={loadedPlaces}/>
